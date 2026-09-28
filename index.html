@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Computação na Nuvem - Conteúdos da Cadeira</title>
+    <!-- Importação do Ficheiro de Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts para um aspeto moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <span class="badge"><i class="fa-solid fa-cloud"></i> Unidade Curricular</span>
+            <h1>Introdução à Computação na Nuvem</h1>
+            <p>Programa completo da cadeira: ferramentas, arquiteturas, conteinerização, infraestrutura como código, microsserviços e muito mais.</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Controls & Search -->
+        <div class="controls-bar">
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Pesquisar tópicos (ex: Docker, Kubernetes, Terraform)...">
+            </div>
+            <div class="counter" id="topicCounter">12 Módulos disponíveis</div>
+        </div>
+
+        <!-- Topics Grid -->
+        <div class="topics-grid" id="topicsGrid">
+
+            <!-- Tópico 1 -->
+            <div class="topic-card" data-title="configuração de ambiente e ferramentas">
+                <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 01</span>
+                    <h3>Configuração de Ambiente e Ferramentas</h3>
+                    <p>Introdução aos conceitos fundamentais de computação na nuvem, preparação do ambiente de trabalho e ferramentas essenciais para desenvolvimento e gestão cloud.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 2 -->
+            <div class="topic-card" data-title="introdução docker e docker compose">
+                <div class="card-icon"><i class="fa-brands fa-docker"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 02</span>
+                    <h3>Introdução Docker e Docker Compose</h3>
+                    <p>Conceitos de contentorização, criação de imagens, gestão de contentores isolados e orquestração multi-contentor utilizando Docker Compose.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 3 -->
+            <div class="topic-card" data-title="docker avançado pipeline ci cd">
+                <div class="card-icon"><i class="fa-solid fa-infinity"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 03</span>
+                    <h3>Docker Avançado & Pipeline CI/CD</h3>
+                    <p>Tópicos avançados de Docker, otimização de imagens, multi-stage builds e integração de contentores em pipelines de Integração Contínua e Entrega Contínua (CI/CD).</p>
+                </div>
+            </div>
+
+            <!-- Tópico 4 -->
+            <div class="topic-card" data-title="redes em ambientes cloud e desenho de arquiteturas infraestrutura como código terraform">
+                <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 04</span>
+                    <h3>Redes Cloud & Desenho de Arquiteturas (Terraform)</h3>
+                    <p>Arquitetura de redes em ambientes de nuvem (VPCs, subnets, gateways) e automação de infraestruturas utilizando Infraestrutura como Código com Terraform.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 5 -->
+            <div class="topic-card" data-title="máquinas virtuais segurança">
+                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 05</span>
+                    <h3>Máquinas Virtuais & Segurança</h3>
+                    <p>Implementação, gestão e ciclo de vida de Máquinas Virtuais na nuvem, aplicando as melhores práticas de segurança, firewalls, gestão de acessos (IAM) e encriptação.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 6 -->
+            <div class="topic-card" data-title="armazenamento sql e buckets">
+                <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 06</span>
+                    <h3>Armazenamento: SQL e Buckets</h3>
+                    <p>Soluções de persistência e armazenamento escalável na nuvem, abrangendo bases de dados relacionais (SQL) geridas e armazenamento de objetos (Buckets/S3).</p>
+                </div>
+            </div>
+
+            <!-- Tópico 7 -->
+            <div class="topic-card" data-title="big data influxdb e opensearch">
+                <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 07</span>
+                    <h3>Big Data: InfluxDB & OpenSearch</h3>
+                    <p>Processamento e análise de grandes volumes de dados, séries temporais com InfluxDB e motores de busca e analítica distribuída com OpenSearch.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 8 -->
+            <div class="topic-card" data-title="alertas logs custos monitorização">
+                <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 08</span>
+                    <h3>Alertas, Logs, Custos & Monitorização</h3>
+                    <p>Observabilidade na nuvem: recolha e análise de logs, definição de métricas de desempenho, configuração de alertas e otimização/controlo de custos cloud.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 9 -->
+            <div class="topic-card" data-title="micro serviços kubernetes helm">
+                <div class="card-icon"><i class="fa-solid fa-cubes"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 09</span>
+                    <h3>Microsserviços: Kubernetes & Helm</h3>
+                    <p>Arquiteturas de microsserviços, orquestração avançada com Kubernetes (K8s) e gestão de pacotes e templates de configuração com Helm.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 10 -->
+            <div class="topic-card" data-title="pipelines deployment kubernetes">
+                <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 10</span>
+                    <h3>Pipelines de Deployment & Kubernetes</h3>
+                    <p>Estratégias avançadas de deployment contínuo (rolling updates, canary, blue-green) direcionadas a clusters Kubernetes.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 11 -->
+            <div class="topic-card" data-title="message brokers kafka cache redis">
+                <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 11</span>
+                    <h3>Message Brokers (Kafka) & Cache (Redis)</h3>
+                    <p>Sistemas de mensageria assíncrona orientados a eventos com Apache Kafka e soluções de cache em memória de alta performance com Redis.</p>
+                </div>
+            </div>
+
+            <!-- Tópico 12 -->
+            <div class="topic-card" data-title="serverless">
+                <div class="card-icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+                <div class="card-body">
+                    <span class="module-number">Módulo 12</span>
+                    <h3>Serverless</h3>
+                    <p>Computação sem servidor (FaaS), arquiteturas orientadas a eventos na nuvem, escalabilidade automática e redução de custos operacionais com serviços Serverless.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Empty State (Hidden by default) -->
+        <div id="noResults" class="no-results" style="display: none;">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Nenhum tópico encontrado para a tua pesquisa.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 - Introdução à Computação na Nuvem. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para a funcionalidade de pesquisa em tempo real -->
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const topicsGrid = document.getElementById('topicsGrid');
+        const topicCards = topicsGrid.getElementsByClassName('topic-card');
+        const noResults = document.getElementById('noResults');
+        const topicCounter = document.getElementById('topicCounter');
+
+        searchInput.addEventListener('input', function() {
+            const query = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            for (let card of topicCards) {
+                const title = card.getAttribute('data-title');
+                const text = card.innerText.toLowerCase();
+
+                if (title.includes(query) || text.includes(query)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            }
+
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+
+            topicCounter.innerText = `${visibleCount} Módulo${visibleCount !== 1 ? 's' : ''} visível${visibleCount !== 1 ? 'is' : ''}`;
+        });
+    </script>
+</body>
+</html>
